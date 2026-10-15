@@ -1,0 +1,12 @@
+# =====================================================================
+# DKIS Monitoring System - Python Dependencies
+# =====================================================================
+
+# Core dependencies (Wajib untuk CLI, Scraper TikTok, FB, IG OPD, & Telegram Bot)
+requests>=2.28.0
+python-dotenv>=1.0.0
+
+# Optional NLP dependencies:
+# Hanya dibutuhkan jika menjalankan analisis sentimen lokal IndoBERTweet di modul media Instagram
+# transformers>=4.30.0
+# torch>=2.0.0

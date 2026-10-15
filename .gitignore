@@ -1,0 +1,63 @@
+# =====================================================================
+# ENVIRONMENT VARIABLES & SECRETS (JANGAN PERNAH DI-COMMIT)
+# =====================================================================
+.env
+.env.*
+*.env
+!.env.example
+!bot/.env.example
+
+# =====================================================================
+# PYTHON & ENVIRONMENT
+# =====================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# =====================================================================
+# IDE & OS ARTIFACTS
+# =====================================================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# =====================================================================
+# BOT TELEGRAM RUNTIME LOGS & SESSIONS
+# =====================================================================
+bot/log/*
+!bot/log/.gitkeep
+bot/data/*
+!bot/data/.gitkeep
+
+# =====================================================================
+# HASIL SCRAPING (Struktur folder dipertahankan lewat .gitkeep)
+# =====================================================================
+**/post/*
+!**/post/.gitkeep
+**/comment/*
+!**/comment/.gitkeep
+**/history/*
+!**/history/.gitkeep
+instagram/cirebon_opd/data/*
+!instagram/cirebon_opd/data/.gitkeep
+
+# =====================================================================
+# LOG LOKAL
+# =====================================================================
+*.log
+
+# =====================================================================
+# PENTING: Kaidah & Topik
+# kaidah/*.json dan topik/**/*.json, contoh.txt, varian_query.json
+# sengaja TIDAK diabaikan karena merupakan knowledge base aturan.
+# =====================================================================

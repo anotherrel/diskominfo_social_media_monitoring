@@ -1,0 +1,52 @@
+{
+  "versi": 3,
+  "nama": "Kaidah wilayah — versi sederhana (1 kata gerbang)",
+  "dibuat": "2026-09-18",
+  "prinsip": "Penyaring wilayah HANYA 1 kata. Semua penilaian topik + wilayah lain diserahkan ke AI, dengan contoh video yang diisi user. Tidak ada bobot kata, tidak ada ambang skor, tidak ada daftar jalan, tidak ada daftar kecamatan.",
+  "cara_pakai_singkat": [
+    "1_kata_gerbang   : post jadi KANDIDAT kalau memuat salah satu kata ini (dicocokkan sebagai potongan kata, jadi #kotacirebon dan #cirebonpride ikut kena).",
+    "2_tanda_lokal    : TIDAK menyaring apa pun. Ini cuma petunjuk untuk AI supaya dia tahu kata/dialek/nama kawasan ini menandakan wilayah kita.",
+    "3_kata_terlarang : konten sampah (judi, olshop). Dibuang SEBELUM AI supaya hemat token. Bukan penilai topik.",
+    "4_keterangan_wilayah: kalimat yang dikirim ke AI supaya dia tahu mana sasaran dan mana yang bukan sasaran.",
+    "Ganti kota? Cukup ubah 1_kata_gerbang, 2_tanda_lokal, dan 4_keterangan_wilayah. Tidak ada kode yang perlu disentuh."
+  ],
+
+  "1_kata_gerbang": [
+    "cirebon"
+  ],
+
+  "2_tanda_lokal": {
+    "guna": "Petunjuk untuk AI (bukan penyaring). Boleh ditambah kapan saja kalau kamu lihat netizen memakai kata lain.",
+    "dialek": [
+      "ampiyum", "euy", "atuh", "jeh", "bah", "gowes dewek", "ci abah", "wang"
+    ],
+    "nama_kawasan_kota": [
+      "kotacirebon", "cirebonkota", "cirebonpride", "panjunan", "kanoman",
+      "jagasatru", "pulasaren", "pekiringan", "kejaksan", "lemahwungkuk",
+      "kesambi", "harjamukti", "pekalipan", "kasepuhan", "pegambiran",
+      "kesenden", "kalijaga", "sunyaragi", "alun-alun kejaksan", "pasar kanoman",
+      "csb", "grage city", "balai kota", "pemkot cirebon", "pemda kota cirebon"
+    ],
+    "nama_kawasan_kabupaten": [
+      "kabcirebon", "cirebonkabupaten", "sumber", "plumbon", "losari", "pabedilan",
+      "sedong", "waled", "pabuaran", "karangsembung", "depok", "gegesik", "plered",
+      "arjawinangun", "kapetakan", "palimanan", "kedawung", "weru", "pemkab cirebon"
+    ]
+  },
+
+  "3_kata_terlarang": {
+    "guna": "Konten sampah. Dicocokkan PER KATA (bukan potongan kata), supaya 'pers' tidak cocok dengan 'persistenteats'.",
+    "daftar": [
+      "judi", "slot", "gacor", "togel", "pinjol", "open bo",
+      "olshop", "affiliate", "reseller", "dropship", "cashback",
+      "mobile legends", "mlbb", "free fire", "gta", "gameplay",
+      "preset", "jedag jedug", "skincare", "slowmo"
+    ]
+  },
+
+  "4_keterangan_wilayah": {
+    "guna": "Dikirim apa adanya ke prompt AI.",
+    "wilayah_nama": "Wilayah Cirebon (mencakup Kota Cirebon maupun Kabupaten Cirebon)",
+    "wilayah_bukan": "Kota/kabupaten luar lainnya (misal Majalengka, Indramayu, Kuningan, Brebes, Tegal, Bandung, dan seterusnya)"
+  }
+}

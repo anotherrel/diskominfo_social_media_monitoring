@@ -1,0 +1,4 @@
+# Format: URL | caption apa adanya (satu contoh = satu baris)
+# Topik: Banjir Cirebon
+
+https://www.facebook.com/cirebon/posts/101589123456789 | Banjir melanda jalan cipto kota cirebon setinggi 40 cm sore ini warga diimbau waspada
